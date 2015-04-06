@@ -1,3 +1,8 @@
+/*
+*	Copyright (c) 2015 Tomáš Pazdiora
+*	See the file "LICENSE.txt" for the full license governing this code.
+*/
+
 #ifndef DRAW_TEST_H_
 #define DRAW_TEST_H_
 

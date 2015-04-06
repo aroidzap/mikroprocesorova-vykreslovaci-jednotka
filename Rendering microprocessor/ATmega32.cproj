@@ -156,12 +156,6 @@
     <Compile Include="FAT.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="font.c">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="font.h">
-      <SubType>compile</SubType>
-    </Compile>
     <Compile Include="SD.c">
       <SubType>compile</SubType>
     </Compile>
@@ -178,12 +172,6 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="SPI.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="text.c">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="text.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="touch_button.c">

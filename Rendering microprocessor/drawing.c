@@ -1,3 +1,8 @@
+/*
+*	Copyright (c) 2015 Tomáš Pazdiora
+*	See the file "LICENSE.txt" for the full license governing this code.
+*/
+
 #include "drawing.h"
 
 unsigned long time = 0;

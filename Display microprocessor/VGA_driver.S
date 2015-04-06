@@ -1,3 +1,8 @@
+; 
+;	Copyright (c) 2015 Tomáš Pazdiora
+;	See the file "LICENSE.txt" for the full license governing this code.
+;
+
 ; do not use : GPIOR0,GPIOR1,r20,r21,r22,r23
 ; r2 - command ; r3 - copy step
 ; do not use : interrupts

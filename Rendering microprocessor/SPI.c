@@ -1,3 +1,8 @@
+/*
+*	Copyright (c) 2015 Tomáš Pazdiora
+*	See the file "LICENSE.txt" for the full license governing this code.
+*/
+
 #include "SPI.h"
 
 void SPI_init()

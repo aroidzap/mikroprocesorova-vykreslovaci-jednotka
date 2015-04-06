@@ -1,3 +1,8 @@
+/*
+*	Copyright (c) 2015 Tomáš Pazdiora
+*	See the file "LICENSE.txt" for the full license governing this code.
+*/
+
 #ifndef CMD_PARSER_H_
 #define CMD_PARSER_H_
 
