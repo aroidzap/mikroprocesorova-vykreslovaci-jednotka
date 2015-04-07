@@ -15,7 +15,7 @@ void RAM_init();
 extern unsigned char const PROGMEM translate_x_data[33];
 extern unsigned char _x_increment_addr;
 
-void set_Y(uint16_t _value);
+void set_Y(unsigned int _value);
 void set_X(unsigned char _value);
 unsigned char translate_x(unsigned char x);
 

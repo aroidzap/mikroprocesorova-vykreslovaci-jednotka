@@ -34,7 +34,7 @@ unsigned char translate_x(unsigned char x)
 	return result;
 }
 
-void set_Y(uint16_t _value)
+void set_Y(unsigned int _value)
 {
 	//	%0 CTRL_PORT
 	//	%1 CLK_Y
