@@ -162,17 +162,17 @@ unsigned char SD_command_R1(unsigned char cmd, unsigned long arg, unsigned char 
 	return response;
 }
 
-void SD_read_start(unsigned long adress,unsigned long blocks)
+void SD_read_start(unsigned long address,unsigned long blocks)
 {
 	unsigned char timeout1,timeout2;
 	unsigned char response;
 	
-	SD_last_address=adress;
+	SD_last_address=address;
 	SD_last_blocks=blocks;
 	
 	if (SD_HighCapacity==0)
 	{
-		adress=adress*512UL;
+		address=address*512UL;
 	}
 	
 	if (SD_is_reading==1){SD_read_stop();}
@@ -183,14 +183,14 @@ void SD_read_start(unsigned long adress,unsigned long blocks)
 		timeout1 = 0;
 		timeout2 = 0;
 		
-		SD_command(18,adress);
+		SD_command(18,address);
 		
 		do
 		{
 			response=SPI_transfer(0xFF);
 			if ((response&0x88)==0x08) //crc error
 			{
-				SD_command(18,adress);
+				SD_command(18,address);
 				response=SPI_transfer(0xFF);
 			}
 			timeout1++;
