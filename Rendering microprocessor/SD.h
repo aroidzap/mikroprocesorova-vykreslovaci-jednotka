@@ -39,7 +39,7 @@ unsigned char crc7(unsigned char *message);
 void SD_command(unsigned char cmd, unsigned long arg);
 unsigned char SD_command_R1(unsigned char cmd, unsigned long arg, unsigned char expected_response);
 
-void SD_read_start(unsigned long adress,unsigned long blocks);
+void SD_read_start(unsigned long address,unsigned long blocks);
 void SD_read_stop();
 unsigned char SD_read_next();
 unsigned long SD_next_ul();
