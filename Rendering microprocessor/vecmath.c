@@ -40,9 +40,9 @@ vec3 average(vec3 a, vec3 b)
 vec3 mix(vec3 a, vec3 b,unsigned char alpha)
 {
 	vec3 result;
-	result.r = ( (255-(unsigned int)alpha)*(unsigned int)a.r + (unsigned int)alpha*(unsigned int)b.r ) / 255 ;
-	result.g = ( (255-(unsigned int)alpha)*(unsigned int)a.g + (unsigned int)alpha*(unsigned int)b.g ) / 255 ;
-	result.b = ( (255-(unsigned int)alpha)*(unsigned int)a.b + (unsigned int)alpha*(unsigned int)b.b ) / 255 ;
+	result.r = (255-(unsigned int)alpha)*(unsigned int)a.r + (unsigned int)alpha*(unsigned int)b.r ;
+	result.g = (255-(unsigned int)alpha)*(unsigned int)a.g + (unsigned int)alpha*(unsigned int)b.g ;
+	result.b = (255-(unsigned int)alpha)*(unsigned int)a.b + (unsigned int)alpha*(unsigned int)b.b ;
 	return result;
 }
 
