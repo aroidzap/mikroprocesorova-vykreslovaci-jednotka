@@ -1,0 +1,9 @@
+ATtiny4313:
+Low:		0xFF
+High:		0xD9
+Extended:	0xFF	
+
+ATmega32:
+Low:		0x3F
+High:		0xD9
+Extended:	---
