@@ -7,6 +7,7 @@
 #define SD_H_
 
 #include <avr/io.h>
+#include <avr/wdt.h>
 #include "settings.h"
 #include "SPI.h"
 

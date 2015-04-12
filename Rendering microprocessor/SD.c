@@ -91,24 +91,28 @@ int SD_init_basic()
 	SPI_init(); // low speed (fosc/128) for SD initialization
 	
 	unsigned char response;
-	unsigned char error=1;
 	
-	while(error!=0)
-	{
-		SD_idle();
+	SD_idle();
+	
+	wdt_reset();
+	wdt_enable(WDTO_2S);
 		
-		response=0xFF;
-		if(response!=1){response=SD_command_R1(0, 0x00000000, 1);error=0;}
-		
-		response=0xFF;
-		if(response!=0){response=SD_command_R1(1, 0x00000000, 0);error=0;}
-		
- 		response=0xFF;
- 		if(response!=0){response=SD_command_R1(59, 0x00000001, 0);error=0;} //turn on CRC7
-		
-		response=0xFF;
-		if(response!=0){response=SD_command_R1(16, 0x00000200, 0);error=0;} //SDSC - set block length to 512B
-	}
+	response=0xFF;
+	while(response!=1){response=SD_command_R1(0, 0x00000000, 1);}
+	
+	wdt_reset();
+	response=0xFF;
+	while(response!=0){response=SD_command_R1(1, 0x00000000, 0);}
+	
+	wdt_reset();
+ 	response=0xFF;
+ 	while(response!=0){response=SD_command_R1(59, 0x00000001, 0);} //turn on CRC7
+	
+	wdt_reset();
+	response=0xFF;
+	while(response!=0){response=SD_command_R1(16, 0x00000200, 0);} //SDSC - set block length to 512B
+			
+	wdt_disable();
 	
 	SD_HighCapacity=0;
 	

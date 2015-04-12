@@ -21,8 +21,6 @@
 #include "draw_test.h"
 #include "touch_button.h"
 
-#include "text.h"
-
 void InitializeDevice()
 {
 	RAM_init();
