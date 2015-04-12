@@ -1,0 +1,1 @@
+Desky mùžete zobrazovat a exportovat pomocí EAGLE Light Edition od CadSoftu (dostupné z: http://www.cadsoftusa.com/download-eagle/freeware/)
