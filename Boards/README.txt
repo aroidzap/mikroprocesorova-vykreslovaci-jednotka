@@ -1,0 +1,1 @@
+You can view and export boards using CadSoft's EAGLE Light Edition. (available from: http://www.cadsoftusa.com/download-eagle/freeware/)
